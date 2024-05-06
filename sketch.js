@@ -8,8 +8,7 @@ let updateButton;
 let timeDifference = 0;
 
 function setup() {
-    createCanvas(800, 450); 
-
+    createCanvas(800, 450);  
 
     timeInput = createInput(getCurrentTime(), 'time');
     timeInput.position(290, 0);
@@ -71,6 +70,9 @@ function drawClockWithPointSlope(xc, yc,city) {
       }
       drawCirclePoints(xc, yc, x, y);
     }
+
+    text(`${city.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}`, xc - 30, yc + 130);
+    text("La Paz", xc - 20, yc + 150);
 }
   
 function drawClockWithDDA(xc, yc,city) {
@@ -108,6 +110,8 @@ function drawClockWithDDA(xc, yc,city) {
       }
       drawCirclePoints(xc, yc, x, y);
     }
+    text(`${city.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}`, xc - 30, yc + 130);
+    text("Ciudad de México", xc - 40, yc + 150);
 }
 
 function drawClockWithBresenham(xc, yc,city) {
@@ -144,6 +148,8 @@ function drawClockWithBresenham(xc, yc,city) {
       }
       drawCirclePoints(xc, yc, x, y);
     }
+    text(`${city.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}`, xc - 30, yc + 130);
+    text("Barcelona", xc - 25, yc + 150);
 }
   
 function drawLineBresenham(x0, y0, x1, y1,lineColor) {
