@@ -1,0 +1,25 @@
+/* style.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.custom-input {
+  padding: 8px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.custom-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 13.5px;
+}
